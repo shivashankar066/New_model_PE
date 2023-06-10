@@ -1,5 +1,6 @@
 import os
 import sys
+
 from src.components.data_preprocessing import Datapreprocess
 # from src.components.model_trainer import ModelTrainer
 from src.exception import CustomException
@@ -93,7 +94,7 @@ if __name__ == "__main__":
     data_preprocess= Datapreprocess()
     X_new=data_preprocess.initial_data_processing(data_set)
     print(X_new.head(), X_new.columns, X_new.shape)
-#     data_transformation = DataTransformation()
+    # data_transformation = DataTransformation()
 #     train_arr, test_arr = data_transformation.initate_data_transformation(data_set)
 #
 #     modeltrainer = ModelTrainer()

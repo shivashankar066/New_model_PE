@@ -3,10 +3,14 @@ import sys
 from src.exception import CustomException
 from src.logger import logging
 import numpy as np
+# from src.components.data_ingestion import DataIngestion
 # from dataclasses import dataclass
 
 
 class Datapreprocess:
+    def __init__(self):
+        pass
+
     def q3(self, x):
         """function to return 3rd quartile"""
         return x.quantile(0.75)
